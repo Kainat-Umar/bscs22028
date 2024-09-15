@@ -83,7 +83,7 @@ section{
     padding: 10rem 12% 10rem;
 }
 
-.home{
+.home, .about{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +120,7 @@ span{
     line-height: 1;
 }
 
-.home-img{
+.home-img, .about-img{
     border-radius: 50%;
 }
 
@@ -140,7 +140,26 @@ span{
                 0 0 100px var(--mainClr);
 }
 
-.home-content p{
+.about-img img{
+    position: relative;
+    top: 3rem;
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--mainClr);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.home-content p, .about-content p{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
