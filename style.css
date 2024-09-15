@@ -11,7 +11,7 @@
 
 :root {
     --bgClr: #1f0b40;
-    --bgClr2: #443076;
+    --bgClr2: #372564;
     --mainClr: #a31c88;
     --txtClr: #ecc0ff;
     --opt3: #6c1e76;
@@ -114,7 +114,7 @@ span{
 }
 
 .home-content h1{
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -243,19 +243,19 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Frontend Designer";
+        content: "CS Student";
     }
     21%, 40%{
-        content: "Web Designer";
+        content: "Developer";
     }
     41%, 60%{
-        content: "UI/UX Designer";
+        content: "Tech Enthusiast";
     }
     61%, 80%{
-        content: "Web Developer";
+        content: "Programmer";
     }
     81%, 100%{
-        content: "Software Tester";
+        content: "Project Manager";
     }
 }
 
@@ -431,4 +431,111 @@ span{
     max-height: 100px;
     line-height: 1.5;
     margin: auto;
+}
+
+.contact{
+    background-color: var(--bgClr);
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--txtClr);
+    background: var(--bgClr);
+    border-radius: 2rem;
+    border: 2px solid var(--mainClr);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--bgClr2);
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--mainClr);
+}
+
+.footer .social a{
+    font-size: 25px;
+    color: var(--mainClr);
+    border: 2px solid var(--mainClr);
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--mainClr);
+    color: black;
+    box-shadow: 0 0 25px var(--mainClr);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid var(--mainClr);
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
 }
