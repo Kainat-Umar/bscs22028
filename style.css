@@ -375,3 +375,60 @@ span{
     background-color: var(--bgClr);
     width: 50px;
 }
+
+.projects{
+    background: var(--bgClr);
+    color: black;
+}
+
+.projects h2{
+    margin-bottom: 5rem;
+    color: var(--txtClr);
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.projects-box{
+    background-color: #9c3d89;
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.projects-box:hover{
+    background:var(--txtClr);
+    color: black;
+    border: 5px solid var(--mainClr);
+    transform: scale(1.03);
+}
+
+.projects-box .projects-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 3rem 3rem;
+}
+
+.projects-info h4{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.projects-info p{
+    font-size: 1.5rem;
+    font-weight: 550;
+    max-height: 100px;
+    line-height: 1.5;
+    margin: auto;
+}
