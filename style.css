@@ -83,7 +83,7 @@ section{
     padding: 10rem 12% 10rem;
 }
 
-.home, .about{
+.home{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,23 +140,34 @@ span{
                 0 0 100px var(--mainClr);
 }
 
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 .about-img img{
     position: relative;
-    top: 3rem;
-    width: 25vw;
+    top: 2rem;
+    width: 22vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--mainClr);
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 
-.about-content{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+.about-content {
+    flex: 2;
     text-align: center;
-    justify-content: center;
-    margin-top: 3rem;
+    max-width: 600px;
 }
 
 .home-content p, .about-content p{
@@ -452,6 +463,42 @@ span{
     margin: auto;
 }
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.skill-category {
+    flex: 1 1 calc(50% - 2rem);
+    background-color:#9c3d89;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: calc(50% - 2rem);
+}
+
+.skill-category h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--bgClr);
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
 .contact{
     background-color: var(--bgClr);
 }
@@ -606,7 +653,6 @@ span{
     #menu-icon{
         display: block;
     }
-
     .navbar{
         position: absolute;
         top: 100%;
@@ -648,6 +694,20 @@ span{
     }
     .home-img img{
         width: 56vw;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content {
+        text-align: center;
+    }
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-category {
+        max-width: 90%;
     }
     .projects h2{
         margin-bottom: 3rem;
